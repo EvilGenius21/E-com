@@ -1,0 +1,266 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+ body{
+    background-color: rgba(74, 222, 225, 0.297);
+}
+h2{
+    font-size:3em;
+}
+h3{
+    font-size: 2em;;
+}
+h4{
+    font-size:1.5em;
+}
+h6{
+    font-size: 1.25em;
+    color:blueviolet;
+    
+}
+h7{
+    font-size: 1em;
+    /* color:indianred; */
+    font-weight:bold;
+    
+}
+*{ margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient rgba((0,0,0,0.1));
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 50px;
+    background:    rgba(107, 248, 248, 0.241);
+    box-shadow:0px 10px 5px rgba(0,0 ,0 , 0.241) ;/* offset-x | offset-y | blur-radius | spread-radius | color */
+    height:3rem;
+    z-index: 999;
+ position:sticky;
+ top:0;
+ left:0;
+    /*  keeps header always on the screen */
+}
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding:0px 30px;
+    font-family:'Roboto', sans-serif; 
+    /* position: relative; */
+}
+.navbar a{
+    padding:20px;
+    text-decoration: none;
+    font-weight:bold;
+    color:black;
+    position: relative;
+}
+.navbar a:hover{
+    color:darkkhaki;
+}
+  
+.navbar a::before{
+    content:'';
+    position: absolute;
+    border-bottom:  2.5px solid indianred ;
+    top:0px;
+    bottom:0px;
+    width:0%;
+    transition: 0.6s; 
+    
+}
+.navbar a:hover:before{
+    /* position: relative; */
+    width:100%;
+}
+
+#hero{
+
+    background-image: url(./hero.png);
+    background-size: cover;
+    height:90vh;
+    /* width:90%; */
+    padding:0px 110px;
+    display:flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+    color:rgb(74, 223, 225);
+    
+}
+#hero h4{ color:antiquewhite;}
+#hero h3{ color:antiquewhite;}
+#hero button{
+    background-color: turquoise;
+    border:0px;
+    font-size:1.5em;
+    padding:15px;
+    border-radius: 0px 35px;
+    cursor: pointer;
+}
+#hero button a{
+    text-decoration: none;
+    color:black;
+    font-weight: 300;
+    font-family: 'Kanit', sans-serif;
+   
+}
+ #feature{
+
+    padding:6vh 0vw;
+    display:flex;
+    justify-content:space-around; 
+     align-items: center; 
+     /* background-color:rgb(126, 217, 217); */
+    
+
+
+} 
+   .febox {
+    width:160px;
+    text-align: center;
+    padding:25px 15px;
+    /* border:1px solid rgb(81, 81, 146); */
+    border-radius: 5px;
+    margin:15px 0px;
+    
+    }
+
+   .febox:hover{
+    /* filter:drop-shadow(15px 15px 20px rgb(67, 224, 226)) *//* box-shadow: 20px 20px 55px indianred; */
+    box-shadow: 15px 15px 20px rgb(67, 224, 226);
+    border:3px solid red;
+   }
+   .febox h6{
+   padding:5px;
+   line-height: 1;
+    color:indianred;
+   }
+
+
+    
+/* .febox img{
+    /* height:50%;
+    width:50%; */
+    /* object-fit: cover; */
+
+#topselling {
+        text-align: center;
+        padding:10px;
+        
+
+    }
+    #topselling h4{
+        color:darkgreen;
+    }
+#topselling h2{
+    color:darkmagenta;
+}
+#topselling #pro1{
+    padding:20px 20px 5px 20px;
+        width:200px;
+        
+    
+        /* height:350px; */
+        border:2px solid #cced70;
+        cursor: pointer;
+        transition:0.5s;
+        position:relative;
+        line-height: 1.5em;
+        border-radius: 30px;
+        
+    }
+#topselling #pro1 img:hover {
+        filter:drop-shadow(10px 10px 30px yellow)
+    }
+    #topselling #pro1:hover{
+    background-color: crimson;
+    
+    }
+#topselling #pro1 img{
+        /* making image responsive */
+        width:100%;
+        /* height:100%; */
+        border-radius:10px;
+    }
+    #topselling #pro1 .detail{
+        text-align: left;
+        padding: 10px 0px;
+    }   
+    #topselling #pro1 .detail span{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size :1.5em;
+    }
+    #topselling #pro1 .cart{
+        padding:10px;
+        border-radius: 30px;
+        background-color:aqua;
+        position: absolute;
+        bottom:35px;
+        right:5px;
+        color: black;
+        transition:0.5s;
+    }
+    #topselling #pro1 .cart:hover{
+        background-color: peru;
+    }
+#topselling .procont1{
+    padding:30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#banner h4{
+    color:black;
+    font-size: 2.5em;
+    font-family: 'Lugrasimo', cursive;
+
+}
+#banner h2{
+    color:black;
+    font-size: 3.5em;
+    font-family: 'Lugrasimo', cursive;
+
+}
+#banner span{
+    color:#ef3636;
+    font-family: 'Lugrasimo', cursive;
+}
+
+#banner{
+    display :flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:30px 0px;
+    padding:30px 5px;
+    background-image: url(./Banner/banner1\ \(1\).jpg);
+    width:110%;
+    height:400px;
+    background-size: cover;
+    
+}
+
+#banner .btn{
+    font-size: 1.5em;
+    color:black;
+    padding:15px 20px;
+    font-family: 'Lugrasimo', cursive;
+    border-bottom: 3px solid black;
+ /* position:absolute; */
+    transition:0.5s;
+}
+#banner .btn:hover{
+    background-color: #088178;
+    color:white;
+    font-weight: bold;
+    /* position:relative; */   
+}
